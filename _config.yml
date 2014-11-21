@@ -1,0 +1,18 @@
+# Site settings
+title: 華文
+email: pde-bois@isep.fr
+description: > # this means to ignore newlines until next value
+  Graph-, set-theoretic analysis of the ideograms set. That project was first
+  aimed at finding the most efficient sinograms learning path and the set base.
+  That turned my mind to study a bit ideographs set and to contribute to help
+  people in memorizing Chinese characters.
+tagline: What's the most efficient way to learn Chinese?
+github: "http://github.com/"
+github_username:  "piotr2b"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://piotr2b.github.io" # the base hostname & protocol for your site
+permalink: none
+
+# Build settings
+markdown: kramdown
+highlighter: pygments

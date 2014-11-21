@@ -9,6 +9,7 @@ description: > # this means to ignore newlines until next value
 tagline: What's the most efficient way to learn Chinese?
 github: "http://github.com/"
 github_username:  "piotr2b"
+repository:  "chinese-huawen"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://piotr2b.github.io" # the base hostname & protocol for your site
 permalink: none

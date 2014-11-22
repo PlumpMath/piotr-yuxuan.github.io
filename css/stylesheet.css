@@ -534,7 +534,7 @@ a.button small {
   display: block;
   font-size: 11px;
 }
-span.page-nav {
+div.page-nav {
   text-align: right;
   color: #474747;
   font-weight: normal;
@@ -542,7 +542,7 @@ span.page-nav {
   font-size: 23px;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
 }
-span.page-nav p {
+div.page-nav p {
   padding: 0px;
   margin: 0px;
 }

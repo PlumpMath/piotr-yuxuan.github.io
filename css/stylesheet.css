@@ -428,10 +428,10 @@ th {
 
 /* LAYOUT STYLES */
 body {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.5;
   background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
-  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: 'Libre Baskerville', 'Linux Libertine', Helvetica, Arial, 'AR PL UKai TW MBE', serif;
   font-weight: 400;
   color: #666;
 }
@@ -490,11 +490,15 @@ header h2 {
 #content-wrapper {
   border-top: solid 1px #fff;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 #main-content {
   width: 690px;
   float: left;
+  text-align: justify;
+  text-justify: inter-word;
+  text-indent: 30px;
 }
 
 #main-content img {
@@ -662,7 +666,7 @@ form {
 
 #main-content h3 {
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   margin-top: 24px;
   margin-bottom: 8px;
@@ -679,7 +683,7 @@ form {
 
 #main-content h4 {
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 8px;
   color: #474747;
@@ -695,7 +699,7 @@ h4:before {
 
 #main-content h5 {
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 8px;
   color: #474747;
   text-indent: 3px;
@@ -734,7 +738,7 @@ p a {
 }
 
 blockquote {
-  font-size: 1.6em;
+  font-size: 1.2em;
   border-left: 10px solid #e9e9e9;
   margin-bottom: 20px;
   padding: 0 0 0 30px;

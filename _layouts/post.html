@@ -2,11 +2,11 @@
 layout: default
 ---
 
-<article class="post-content">
-	{{ content }}
-</article>
-
 <span class="page-nav">{% if page.previous %}
 <p><a rel="prev" href="{{ page.previous.url }}">{{ page.previous.title }} ←</a></p>{% endif %}{% if page.next %}
 <p><a rel="next" href="{{ page.next.url }}">{{ page.next.title }} →</a></p>{% endif %}
+</span>
 
+<article class="post-content">
+	{{ content }}
+</article>

@@ -431,7 +431,7 @@ body {
   font-size: 17px;
   line-height: 1.5;
   background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
-  font-family: 'Libre Baskerville', 'Linux Libertine', Helvetica, Arial, 'AR PL UKai TW MBE', serif;
+  font-family: 'Libre Baskerville', Helvetica, Arial, 'AR PL UKai TW MBE', serif;
   font-weight: 400;
   color: #666;
 }
@@ -455,7 +455,7 @@ a:hover {
 header {
   padding-top: 40px;
   padding-bottom: 40px;
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, 'AR PL UKai TW MBE', Arial, serif;
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
   border-bottom: solid 1px #275da1;
 }
@@ -468,6 +468,7 @@ header h1 {
   line-height: 1;
   margin-top: 0;
   margin-bottom: 0.2em;
+  font-family: 'AR PL UKai TW MBE', Arial, serif;
   width: 540px;
 }
 
@@ -532,7 +533,7 @@ a.button {
   color: #fff;
   padding-left: 68px;
   padding-top: 22px;
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: 'Architects', 'Helvetica Neue', Helvetica, Arial, serif;
 }
 a.button small {
   display: block;
@@ -544,7 +545,7 @@ div.page-nav {
   font-weight: normal;
   line-height: 1.3;
   font-size: 23px;
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: 'Architects', 'Helvetica Neue', Helvetica, Arial, serif;
 }
 div.page-nav p {
   padding: 0px;
@@ -632,7 +633,7 @@ form {
 /* GENERAL ELEMENT TYPE STYLES */
 
 #main-content h1 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: 'Architects', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 2.8em;
   font-weight: normal;
   letter-spacing: -1px;
@@ -650,7 +651,7 @@ form {
 }
 
 #main-content h2 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: 'Architects', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 8px;
@@ -665,7 +666,7 @@ form {
 }
 
 #main-content h3 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: 'Architects', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 22px;
   font-weight: bold;
   margin-top: 24px;
@@ -682,7 +683,7 @@ form {
 }
 
 #main-content h4 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: 'Architects', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 8px;
@@ -698,7 +699,7 @@ h4:before {
 }
 
 #main-content h5 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: 'Architects', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 18px;
   margin-bottom: 8px;
   color: #474747;
@@ -712,7 +713,7 @@ h5:before {
 }
 
 #main-content h6 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: 'Architects', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: .8em;
   margin-bottom: 8px;
   color: #474747;

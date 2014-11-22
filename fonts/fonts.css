@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Libre Baskerville"), url("LibreBaskerville.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Architects Daughter";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Architects Daughter"), url("ArchitectsDaughter.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AR PL UKai TW MBE";
+  font-stretch: expanded;
+  src: local("AR PL UKai TW MBE"), url("AR-PL-UKai-TW-MBE.ttc") format("ttc");
+}

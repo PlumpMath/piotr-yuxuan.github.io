@@ -20,4 +20,3 @@ highlighter: pygments
 
 exclude:
   - README.md
-  - sitemap.xml

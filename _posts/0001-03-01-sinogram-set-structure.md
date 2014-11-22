@@ -51,6 +51,7 @@ If $$a = x = b$$, we have $$a \mathcal{R} b$$, $$ a \mathcal{R} c$$ and $$c \mat
 $$G$$ is currently the [transitive reduction](https://en.wikipedia.org/wiki/Transitive_reduction) of the aforementionned parsing graph. It doesn't match perfectly. We draw for instance such an intuitive graph on the left and its transitive reduction on the right. They are equivalent whilst talking about composition and the transitive reduction ensures there is zero or one single path from a sinogram to another. Arcs are top-to-down oriented.
 
 ~~~
+
    a   b    a   b   The right graph is the transitive
     \ /|     \ /    reduction of the left one; they
      c |      c     have the same reachability.
@@ -63,6 +64,7 @@ To each vertex $$v \in V$$ we associate two subgraphs $$T_v$$ and $$F_v$$ define
 A vertex out-degree can be up 3 because of IDC arity. Built that way, this graph is a [multitree](https://en.wikipedia.org/wiki/Multitree) which means this is a directed acyclic graph in which the set of nodes reachable from any node form a tree.
 
 ~~~
+
  x       A multitree. Arcs are left-to-right oriented.
   \      
    z     x and y are minimal vertices.
@@ -116,6 +118,7 @@ $$ \mathbb{F}_a \setminus \mathbb{F}_b \subset \mathbb{F}_a \Delta \mathbb{F}_b 
 Well… finally what's the most efficient way to learn Chinese? Have we stepped forward or is all this theoretic discussion useless? Let's have a look on such a forest. Arcs are from the top to the bottom, thus arc $$af$$ is $$a \rightarrow f$$.
 
 ~~~
+
   a    b    c    d
   |   /|\   |        A denser forest. Arcs are from the top to the bottom.
    \ / | \  e                        +–––––––––––––––––––––––––––––––––––+

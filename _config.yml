@@ -17,3 +17,7 @@ permalink: none
 # Build settings
 markdown: kramdown
 highlighter: pygments
+
+exclude:
+  - README.md
+  - sitemap.xml

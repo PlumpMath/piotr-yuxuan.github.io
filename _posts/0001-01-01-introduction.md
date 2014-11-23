@@ -3,7 +3,7 @@ layout: post
 title: Introduction
 ---
 
-Un <a>document préliminaire</a> qui a fait office de cahier des charges ébauche rapidement ce qui est détaillé ci-dessous. Quelques points techniques sont également abordés, contrairement à la suite de ce texte. That page doesn't contain programmatical details about that project – see the [git repository]({{ site.github | append: site.github_username | append: site.repository }}) if you're willing to give them a glance. If reading bores you, watch to [some pictures]({{ site.github | append: site.github_username | append: site.repository | append: "tree/master/gephi" }}) of what I've currently got ☺
+Un [cahier des charges]({{ site.github | append: site.github_username | append: site.repository | append: "/blob/master/documents/Introduction/Introduction.pdf?raw=true" }}) préliminaire ébauche rapidement ce qui est détaillé ci-dessous. Quelques points techniques sont également abordés, contrairement à la suite de ce texte. That page doesn't contain programmatical details about that project – see the [git repository]({{ site.github | append: site.github_username | append: site.repository }}) if you're willing to give them a glance. If reading bores you, watch to [some pictures]({{ site.github | append: site.github_username | append: site.repository | append: "tree/master/gephi" }}) of what I've currently got ☺
 
 > Chinese language is not like most of Western languages: a Chinese character like 貴 can be meaningful by its own whereas Western _z_ means nothing by itself. Chinese is a very different thus very interesting language.
 

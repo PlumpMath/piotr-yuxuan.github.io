@@ -440,7 +440,9 @@ p {
   margin-top: 0;
 }
 
-p small, li small {
+p small,
+li small,
+header h1 {
   font-variant: small-caps;
 } 
 
@@ -472,7 +474,7 @@ header h1 {
   line-height: 1;
   margin-top: 0;
   margin-bottom: 0.2em;
-  font-family: 'AR PL UKai TW MBE', Arial, serif;
+  font-family: 'Libre Baskerville', 'AR PL UKai TW MBE', Arial, serif;
   width: 540px;
 }
 

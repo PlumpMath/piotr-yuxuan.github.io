@@ -8,6 +8,7 @@ abstract: "This part comes when theoretic frame has been weel-defined. Some idea
 
 Il faut faire gaffe ici de ne pas parler de programmation. On peut toujours renvoyer à des documents du projet.
 
+* Compare Chinese frequency and [that diagram](http://tigger.uic.edu/~ejv/img/thelwallfigure1.jpg). Which viewpoint can we get a similar phenomenom from? Can we give a bounding function?
 * Après l'introduction, le parser, bla bla, il faut unifier les variants. Pas tous, mais au moins les variants de l'axe Z (comme 阝). C'est plus simple. Et virer les caractères simplifiés, c'est plus simple.
 * How to store ideogram graphs? Graph databases are quite inviting. Such a database may be able to deal with character variants, thanks to the Unicode Consortium  [character-glyph model](https://github.com/piotr2b/chinese-huawen/blob/master/refs/New%20Perspectives%20in%20Sinographic%20Language%20Processing%20through%20the%20Use%20of%20Character%20Structure.pdf) or any other;
 * How to query character set? [Query language](https://github.com/piotr2b/chinese-huawen/blob/master/refs/A%20Structural%20Query%20System%20for%20Han%20Characters.pdf) sketch has been drawn to mimic `grep`;

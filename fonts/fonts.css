@@ -18,3 +18,10 @@
   font-weight: 400;
   src: local("AR PL UKai TW MBE"), url("UKaiTWMBE.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Another Shabby";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Another Shabby"), url("anothershabby-webfont.ttf") format("truetype");
+}

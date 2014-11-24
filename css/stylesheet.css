@@ -442,7 +442,7 @@ p {
 
 p small,
 li small,
-header h1 {
+header h1 small {
   font-variant: small-caps;
 } 
 
@@ -524,7 +524,8 @@ aside#sidebar {
 
 aside#sidebar p.repo-owner,
 aside#sidebar p.repo-owner a {
-  font-weight: bold;
+  font-family: 'Another Shabby', 'Libre Baskerville', 'AR PL UKai TW MBE', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 15px;
 }
 aside#sidebar img.aside-scripture {
   width: 100%;

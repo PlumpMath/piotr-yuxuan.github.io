@@ -14,7 +14,7 @@ Chinese is build the same way with a tiny difference: where Western characters (
 
 ##### Description Sequence
 
-The structure of a sinogram gives a lot of information about its etymology. Like English, most of sinograms don't visually change a lot when they're used as etymons (or components): 中, 一 and 貝 automatically gives 貴 which is described by the following [Ideographic Description Sequence (<small>ids</small>)](https://en.wikipedia.org/wiki/Chinese_character_description_languages#Ideographic_Description_Sequences): ⿳中一貝. The first character, ⿳, is an [Ideographic Description Character (<small>idc</small>)](http://www.unicode.org/versions/Unicode6.0.0/ch12.pdf). Those characters are used to described sinogram structure. There are twelve ways to compose sinograms so there are accordingly twelve characters: ⿰, ⿱, ⿲, ⿳, ⿴, ⿵, ⿶, ⿷, ⿸, ⿹, ⿺ and ⿻. Such an <small>idc</small> can be seen as an operator whose arity can be 2 or 3.
+The structure of a sinogram gives a lot of information about its etymology. Like English, most of sinograms don't visually change a lot when they're used as etymons (or components): 中, 一 and 貝 automatically gives 貴 which is described by the following [Ideographic Description Sequence (<small>IDS</small>)](https://en.wikipedia.org/wiki/Chinese_character_description_languages#Ideographic_Description_Sequences): ⿳中一貝. The first character, ⿳, is an [Ideographic Description Character (<small>IDC</small>)](http://www.unicode.org/versions/Unicode6.0.0/ch12.pdf). Those characters are used to described sinogram structure. There are twelve ways to compose sinograms so there are accordingly twelve characters: ⿰, ⿱, ⿲, ⿳, ⿴, ⿵, ⿶, ⿷, ⿸, ⿹, ⿺ and ⿻. Such an <small>IDC</small> can be seen as an operator whose arity can be 2 or 3.
 
 Let us see another example. The sinogram 灣 can be described by the following equivalent sequences: 
 
@@ -22,11 +22,11 @@ Let us see another example. The sinogram 灣 can be described by the following e
  * ⿰氵彎 (normalized decomposition, there are the fewest characters possible):
  * ⿰氵⿱⿲⿱幺小言⿱幺小弓 (unfold decomposition to radical).
 
-Extended <small>ids</small> format has also been introduced to build a [structural query system](https://github.com/piotr2b/chinese-huawen/blob/master/bibliography/A%20Structural%20Query%20System%20for%20Han%20Characters.pdf) for sinograms.
+Extended <small>IDS</small> format has also been introduced to build a [structural query system](https://github.com/piotr2b/chinese-huawen/blob/master/bibliography/A%20Structural%20Query%20System%20for%20Han%20Characters.pdf) for sinograms.
 
-However, Unicode hasn't been the first to struggle to encode sinograms. Researchers from Academia Sinica have published an [explanation to handle unencoded sinograms](http://cscl.iis.sinica.edu.tw/cscl/Publication/ICDAT04-WebICS.pdf) by composing them. Their composition system is rather interesting but lacks free and available decomposition data sources. Moreover, I can't figure out how they did encode symbols for their equivalent <small>idc</small> so I can sadly even not type them.
+However, Unicode hasn't been the first to struggle to encode sinograms. Researchers from Academia Sinica have published an [explanation to handle unencoded sinograms](http://cscl.iis.sinica.edu.tw/cscl/Publication/ICDAT04-WebICS.pdf) by composing them. Their composition system is rather interesting but lacks free and available decomposition data sources. Moreover, I can't figure out how they did encode symbols for their equivalent <small>IDC</small> so I can sadly even not type them.
 
-Those decompositions don't go to stroke scale. For instance, the unfold decomposition of 灣 doen't break 小 down. Such "ending" sinograms are called radicals and are used to sort sinograms à la Western lexicographic order. A de facto standard is the [214 Kangxi radical set](https://en.wikipedia.org/wiki/Kangxi_radical). Other decompositions (such like [Wenlin's Character Description Language](http://www.wenlin.com/cdl/)) go straight to strokes. We'll keep to Unicode <small>ids</small>.
+Those decompositions don't go to stroke scale. For instance, the unfold decomposition of 灣 doen't break 小 down. Such "ending" sinograms are called radicals and are used to sort sinograms à la Western lexicographic order. A de facto standard is the [214 Kangxi radical set](https://en.wikipedia.org/wiki/Kangxi_radical). Other decompositions (such like [Wenlin's Character Description Language](http://www.wenlin.com/cdl/)) go straight to strokes. We'll keep to Unicode <small>IDS</small>.
 
 ##### Sinogram Variants
 

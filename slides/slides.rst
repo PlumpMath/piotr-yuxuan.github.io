@@ -39,6 +39,7 @@ Démonstration
 =============
 
 .. code:: sh
+
   cd soutenance/
   alias java=../java/.jdk1.8.0_25/bin/java
   java -jar parser-0.0.1-SNAPSHOT.jar -direct ⿱⿱⿱ABC⿱BC -output visual

@@ -36,6 +36,10 @@ Démonstration
   java -jar parser-0.0.1-SNAPSHOT.jar -files chinois.txt,ABC.txt -output visual
   java -jar parser-0.0.1-SNAPSHOT.jar -files incohérence.txt -output files
 
+* `Répertoire d'exemple`_
+
+.. _Répertoire d'exemple : https://github.com/piotr2b/chinese-huawen/tree/master/soutenance
+
 ----
 
 Rappel du contexte

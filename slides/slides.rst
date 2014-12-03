@@ -19,13 +19,21 @@ official documentation at https://hovercraft.readthedocs.org/
 Soutenance de mini-projet INF723
 ================================
 
-* Démonstration
-* Rappel du contexte
-* Architecture simplifiée
-* Les génériques réifiés…
-* Parcours libre
+* `Démonstration`_
+* `Rappel du contexte`_
+* `Architecture simplifiée`_
+* `Les génériques réifiés…`_
+* `Parcours libre`_
+
+.. _Démonstration : #démo
+.. _Rappel du contexte : #contexte
+.. _Architecture simplifiée : #archi
+.. _Les génériques réifiés… : #génériques
+.. _Parcours libre` : #parcours
 
 ----
+
+:id: démo 
 
 Démonstration
 =============
@@ -43,12 +51,16 @@ Démonstration
 
 ----
 
+:id: contexte
+
 Rappel du contexte
 ==================
 
 http://piotr2b.github.io/
 
 ----
+
+:id: archi
 
 Architecture simplifiée
 =======================
@@ -60,6 +72,8 @@ Architecture simplifiée
 * :code:`JPreviewFrame` utilise une fonte particulière pour afficher les caractères qui ne font pas partie des blocs Unicode standards. Un algorithme de disposition de dessin est rapidement exécuté.
 
 ----
+
+:id: génériques
 
 Les génériques réifiés et la programmation fonctionnelle…
 =========================================================
@@ -84,6 +98,8 @@ Les génériques réifiés et la programmation fonctionnelle…
 .. _Comparaison de C# et Java : https://en.wikipedia.org/wiki/Comparison_of_C_Sharp_and_Java#Type_erasure_versus_reified_generics
 
 ----
+
+:id: parcours
 
 Parcours libre
 ==============

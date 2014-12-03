@@ -576,6 +576,10 @@ aside a.button {
   font-size: 21px;
 }
 
+aside a.soutenance {
+  background: transparent url(../images/soutenance-button.png) 0 0 no-repeat;
+}
+
 code, pre {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #222;

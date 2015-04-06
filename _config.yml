@@ -6,10 +6,10 @@ description: > # this means to ignore newlines until next value
   to learn and remember Chinese characters? This is a growing project.
 tagline: What's the most efficient way to learn Chinese?
 github: "http://github.com/"
-github_username:  "piotr2b"
+github_username:  "piotr-yuxuan"
 repository:  "/chinese-huawen"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://piotr2b.github.io" # the base hostname & protocol for your site
+url: "http://piotr-yuxuan.github.io" # the base hostname & protocol for your site
 permalink: none
 
 # Build settings

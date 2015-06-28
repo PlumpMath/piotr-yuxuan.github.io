@@ -5,7 +5,14 @@ title: Global overview
 
 ## Topics
 
-Global introduction to topics. I can write here.
+Global introduction to topics. I can write here. The automatic list doesn't work yet, still working on this.
+
+ * [Actor chained bug simulation](topics/actor-chained-bug-simulation.html)
+ * [Ad-hoc resilient translation network](topics/ad-hoc-resilient-translation-network.html)
+ * [Automatically change dom tree when visiting some adresses](topics/automatically-change-dom-tree-when-visiting-some-adresses.html)
+ * [Chinese sinograms](topics/chinese-sinograms.html)
+ * [Music](topics/music.html)
+ * [Text message sender](topics/text-message-sender.html)
 
 {% for post in site.collections.topics %}
 <div class="unit whole single-post-excerpt">

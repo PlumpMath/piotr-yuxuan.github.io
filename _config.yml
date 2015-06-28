@@ -36,3 +36,7 @@ links:
 about_image: placeholder.jpg
 ##comment this if you want full width posts with no sidebar
 sidebar: off
+
+collections:
+  topics:
+    output: true

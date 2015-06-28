@@ -1,15 +1,33 @@
 <!DOCTYPE html>
-<html>
-{% include head.html %}
-<body>
-{% include header.html %}
-<div id="content-wrapper">
-<div class="inner clearfix">
-<section id="main-content">
-{{ content }}
-</section>
-{% include aside.html %}
-</div>
-</div>
-</body>
+<html xmlns:og="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }} | {{ site.name }}</title>
+        {% if site.links.github %}
+          <meta name="author" content="{{ site.links.github }}">
+        {% endif %}
+        <meta name="title" content="{{ page.title }}" >
+        <link rel="icon" type="image/png" href="{{site.url}}/favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% include ssn.html %}
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body class="wrap">
+      <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please change for <a href="firefox.org">Firefox</a> to improve your experience.</p>
+      <![endif]-->
+      {% include header.html %}
+      <section class="content">
+        {{ content }}
+      </section>
+      <footer class="grid site-footer">
+        <p><small>&copy;&nbsp;<span style="font-variant: small-caps;">CC-BY-SA</span>&nbsp;{{ site.name }}. Powered by <a href="http://jekyllrb.com" target="_blank"><em>Jekyll</em></a> using <a href="http://bitwiser.in/bitwiser/" target="_blank"><em>Bitwiser</em></a> theme.</small></p>
+      </footer>
+      {% if site.ga_id %}
+        {% include analytics.html %}
+      {% endif %}
+      <script src="/js/script.js"></script>
+    </body>
 </html>

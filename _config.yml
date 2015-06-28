@@ -1,20 +1,38 @@
-# Site settings
-title: 華文
-email: pde-bois@isep.fr
-description: > # this means to ignore newlines until next value
-  Analysis of the sinogram set with graph and set theories. What's the best way
-  to learn and remember Chinese characters? This is a growing project.
-tagline: What's the most efficient way to learn Chinese?
-github: "http://github.com/"
-github_username:  "piotr-yuxuan"
-repository:  "/chinese-huawen"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://piotr-yuxuan.github.io" # the base hostname & protocol for your site
-permalink: none
-
-# Build settings
+##The website title
+name: 胡雨軒 Петр ϐ
+##Markdown processor
 markdown: kramdown
+##syntax highlighter. change it to pygments
 highlighter: pygments
 
-exclude:
-  - README.md
+##define base_url for valid usage in sitemap.xml and robots.txt
+base_url: https://piotr-yuxuan.github.io
+sass:
+  sass_dir: _sass
+  style: :compressed
+##The website description (to be used in meta tags)
+description: > # this means to ignore newlines until next value
+  Just an introduction site for a folk not to forget to write the doc about his
+  projects. It's a good exercice to keep doc up to date. If you're interested in
+  any of these projects, don't dither and get in touch.
+##Some frequently used keywords on your website
+keywords: 胡雨軒, Петр
+
+##define this for disqus comment support
+#disqus: forumname
+
+##set this to enable google analytics
+#ga_id: analyticsID
+#ga_domain: analyticsDomain
+
+##Some commonly used links
+links:
+  facebook: 
+  twitter: 
+  email: 
+  github: piotr-yuxuan
+
+##put desired image in img/ directory and set the value accordingly. If not defined, a placeholder image will be used.
+about_image: placeholder.jpg
+##comment this if you want full width posts with no sidebar
+sidebar: off

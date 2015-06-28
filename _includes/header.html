@@ -1,8 +1,14 @@
 <header>
- <div class="inner">
-	<h1><a href="/">{{ site.title }} ↭ <small>NLP</small></a></h1>
-    <h2>{{ site.tagline }}</h2>
-	<a href="{{ site.github | append: site.github_username | append: site.repository }}" class="button"><small>View project on</small> GitHub</a>
- </div>
+  <h1 class="site-title"><a href="/">{{ site.name }}</a></h1>
+  <nav class="main-nav">
+    <a href="#" class="opener show-on-mobiles">...</a>
+    <div class="clear-opener show-on-mobiles"></div>
+    <div class="grid">
+      <ul>
+        <li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="/blog.html"><i class="fa fa-blog-circle"></i>Blog</a></li>
+        <li><a href="/about.html"><i class="fa fa-info-circle"></i>About</a></li>
+      </ul>
+    </div>
+  </nav>
 </header>
-

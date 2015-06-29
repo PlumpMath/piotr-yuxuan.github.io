@@ -131,8 +131,24 @@ dfn {
  */
 
 h1 {
+    height-width: 50px;
+    vertical-align: middle;
+    overflow: auto;
+    resize: vertical; 
     font-size: 2em;
     margin: 0.67em 0;
+    background-color: #cccccc;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("/img/809269-free-countryside-wallpaper.jpg");
+}
+
+header {
+	h1 {
+		line-height: 450%;
+    	}
 }
 
 /**

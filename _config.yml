@@ -1,5 +1,6 @@
 ##The website title
 name: 胡雨軒 Петр ϐ
+author: 胡雨軒 Петр
 ##Markdown processor
 markdown: kramdown
 ##syntax highlighter. change it to pygments

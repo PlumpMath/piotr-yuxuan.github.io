@@ -6,10 +6,10 @@
     <div class="grid">
       <ul>
         <li><a href="/"><i class="fa fa-home"></i>Home</a></li>
-        <li><a href="/topics/index"><i class="fa fa-blog-circle"></i>Topics</a><ol>
+        <li><a href="/topics/index"><i class="fa fa-blog-circle"></i>Topics</a><ul>
         {% for topic in site.topics %}
 		<li><a href="{{ topic.url }}">{{ topic.title }}</a></li>
-		{% endfor %}</ol></li>
+		{% endfor %}</ul></li>
         <li><a href="/billets.html"><i class="fa fa-blog-circle"></i>Billets</a></li>
         <li><a href="/about.html"><i class="fa fa-info-circle"></i>About</a></li>
       </ul>

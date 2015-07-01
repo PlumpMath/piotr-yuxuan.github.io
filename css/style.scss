@@ -103,16 +103,30 @@ nav ul {
 	margin: 0;
 	background-color: $nav-back-color;
 
-	ul{
+	ul {
 		display: inline-block;
-	}
-	li{
-		position: relative;
-		display: inline-block;
-		padding: 0;
-		margin-right: -4px;
-		a{
-			display: block;
+		li:hover > ul {
+			display:block;
+		}
+		li {
+			position: relative;
+			display: inline-block;
+			padding: 0;
+			margin-right: -4px;
+			a {
+				display: block;
+			}
+		}
+		ul {
+			display:none;
+			position:absolute;
+			top:100%;
+			left:0;
+			padding:0;
+			li {
+				float:left;
+				width: 500px;
+			}
 		}
 	}
 	a{

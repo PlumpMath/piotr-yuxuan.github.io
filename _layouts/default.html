@@ -22,9 +22,7 @@
       <section class="content">
         {{ content }}
       </section>
-      <footer class="grid site-footer">
-        <p><small>&copy;&nbsp;<span style="font-variant: small-caps;">CC-BY-SA</span>&nbsp;{{ site.name }}. Jekyll & Bitwiser. See <a href="/about.html">About</a> for details.</p>
-      </footer>
+      {% include footer.html %}
       {% if site.ga_id %}
         {% include analytics.html %}
       {% endif %}

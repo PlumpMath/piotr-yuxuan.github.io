@@ -40,3 +40,4 @@ sidebar: off
 collections:
   topics:
     output: true
+    permalink: /topics/:path/

@@ -142,13 +142,18 @@ header {
 	    resize: vertical; 
 	    font-size: 2em;
 	    margin: 0.67em 0;
-	    background-color: #cccccc;
+   	}
+   	/**
+   	 * Not very clever to add this but it works ~
+   	 */
+   	.parallax {
+		background-color: #cccccc;
 	    background-size: cover;
 	    background-attachment: fixed;
 	    background-repeat: no-repeat;
 	    background-position: center center;
 	    background-image: url("/img/809269-free-countryside-wallpaper.jpg");
-   	}
+	}
 }
 
 /**

@@ -1,12 +1,15 @@
-<header>
-  <h1 class="site-title"><a href="/">{{ site.name }}</a></h1>
+<header class="parallax">
+  <h1 class="site-title parallax"><a href="/">{{ site.name }}</a></h1>
   <nav class="main-nav">
     <a href="#" class="opener show-on-mobiles">...</a>
     <div class="clear-opener show-on-mobiles"></div>
     <div class="grid">
       <ul>
         <li><a href="/"><i class="fa fa-home"></i>Home</a></li>
-        <li><a href="/global-overview.html"><i class="fa fa-blog-circle"></i>Topics</a></li>
+        <li><a href="/global-overview.html"><i class="fa fa-blog-circle"></i>Topics</a><ol>
+        {% for topic in site.topics %}
+		<li><a href="{{ topic.url }}">{{ topic.title }}</a></li>
+		{% endfor %}</ol></li>
         <li><a href="/billets.html"><i class="fa fa-blog-circle"></i>Billets</a></li>
         <li><a href="/about.html"><i class="fa fa-info-circle"></i>About</a></li>
       </ul>

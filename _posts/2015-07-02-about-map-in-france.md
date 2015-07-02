@@ -23,4 +23,4 @@ With a [£60.000 big crowdfunding](http://donate.openstreetmap.org/server2015/) 
 
 Open innovation helps the France inhabitant for basic things like finding a way or having a look at a map. As we've seen elsewhere, France government is [currently harshly fighting](https://en.wikipedia.org/wiki/Uber_(company)#UberPop_and_UberPool_in_Paris_and_New_York) against it. <small>GG</small> Monsieur H<small>OLLANDE</small>.
 
-[^1]: Actually I dislike to write billets but I'm used to do so when upset. I shouldn't be pessimistic and say this article is #1 of a series but I've been living in that country, I know it'll show me I'm one hundred percent right ><
+[^1]: Actually I dislike to write billets but I'm used to do so when upset. I shouldn't be pessimistic and say this article is #1 of a series but I've been living in that country, I know it'll show me to be one hundred percent right ><

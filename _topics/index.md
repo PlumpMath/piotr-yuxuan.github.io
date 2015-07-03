@@ -7,7 +7,7 @@ abstract_html: "<p>Well, this points to the page you're currently reading at. Th
 
 ## Topics
 
-Topics order is not relevant but merely lexicographic. Here are just shown topics with an abstract. Browse <a href="/topics/">/topics/</a> for comprehensive list or see the menu sublevels.
+Topics order is not relevant but merely lexicographic. Here are just shown topics with an abstract. Give a look to the menu sublevels for a more comprehensive list.
 
 {% for topic in site.topics | sort: 'title' %}
 {% if topic.abstract_html %}

@@ -1,8 +1,9 @@
 ---
-title: "華文: the most efficient way to learn Chinese"
+title: "華文: an efficient way to learn Chinese"
 layout: page
 collection: topics
-abstract_html: "<p>Chinese language is not like most of Western languages: a Chinese character like 貴 can be meaningful by its own whereas Western <i>z</i> means nothing by itself. Chinese is a very different thus very interesting language. What's the most efficient way to learn characters?</p><p>The rational way may be to learn components before compounds. Given that, the most efficient way may be to order Chinese character by frequency. We initially focus on a single sinogram sructure and then broaden the scope to sinogram composition directed network. We further foresee how to crawl it and retrieve data from it.</p>"
+changefreq: daily
+abstract_html: "<p>Chinese language is not like most of Western languages: a sinogram like 貴 can be meaningful by its own whereas Western <i>z</i> means nothing by itself. Chinese is a very different thus very interesting language. What's the most efficient way to learn characters?</p><p>The rational way may be to learn components before compounds. Given that, the most efficient way may be to order Chinese character by frequency. We initially focus on a single sinogram sructure and then broaden the scope to sinogram composition directed network. We further foresee how to crawl it and retrieve data from it.</p>"
 ---
 
 That page doesn't contain programmatical details about that project – see the [git repository](https://www.github.com/{{ site.links.github | append: "/chinese-huawen" }}) if you're willing to give them a glance. If reading bores you, watch to [some pictures](https://www.github.com/{{ site.links.github | append: "/chinese-huawen" | append: "/tree/master/gephi" }}) of what I've currently got ☺

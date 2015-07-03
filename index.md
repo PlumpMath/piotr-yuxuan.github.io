@@ -3,7 +3,7 @@ layout: home
 title: Home
 sitemap:
 priority: 1.0
-changefreq: weekly
+changefreq: daily
 lastmod: 2014-07-07T16:57:30+05:30
 ---
 

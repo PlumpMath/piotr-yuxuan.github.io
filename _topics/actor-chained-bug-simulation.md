@@ -2,6 +2,7 @@
 title: Actor chained bug simulation 
 layout: page
 collection: topics
+changefreq: daily
 abstract_html:
 ---
 

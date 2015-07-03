@@ -2,6 +2,7 @@
 title: Music
 layout: page
 collection: topics
+changefreq: daily
 ---
 
 ## Music

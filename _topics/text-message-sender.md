@@ -3,6 +3,7 @@ title: Text message sender
 layout: page
 collection: topics
 changefreq: daily
+abstract_html: "<p>I was used to Google calendar and made heavy use of text messages notifications for various purposes. Google stops to provide us this service, thank you. I would like to set up a small server to get back again notification messages.</p>"
 ---
 
 ## Text message sender

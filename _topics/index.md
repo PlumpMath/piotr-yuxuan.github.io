@@ -2,7 +2,7 @@
 layout: page
 title: piotr-yuxuan.github.io
 changefreq: daily
-abstract_html: "<p>Well, this points to the page you're currently reading at. This site is to make my mind clearer: it's also a topic we can talk about. See the <a href='/'>homepage</a> for further explanations. This is meta ha ha!</p>"
+abstract_html: "<p>Well, this points to the page you're currently reading at. This site is to make my mind clearer: it's also a topic we can talk about. See the <a href='/'>homepage</a> for further explanations. This is <a href='https://en.wikipedia.org/wiki/Meta'>meta</a> ha ha!</p>"
 ---
 
 ## Topics

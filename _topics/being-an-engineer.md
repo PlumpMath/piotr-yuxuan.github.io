@@ -1,0 +1,41 @@
+---
+title: Being an engineer
+layout: page
+changefreq: daily
+collection: topics
+---
+
+js graph http://maurizzzio.github.io/greuler/
+so we could make something like this as an architecture:
+ * Lexer (from a raw row to sinograms IDS representation through a scanner)
+  * Scanner (fits each and every input type and use lazy sequences. It's at the very frontground)
+ * Parser ()
+ * Core ()
+ * Export (to js graph, gephi, txt, image… can rely on gephi-toolkit. Would be from/to all these formats is create a substrate, put the graph then export it)
+
+I could use this: https://github.com/kawabata/ids-edit and the organisation to see how it looks into the set.
+
+## Being an engineer
+
+As I'm using java for my daily life, I want to keep being a student and 
+A list of DSL for clojures
+http://stackoverflow.com/questions/3968055/are-there-any-clojure-dsls
+
+So my learning path hasn't started from imperative programming, excepted TI-BASIC I used with a calculator. C has not been my first language and I've never felt confident with it.
+
+ * Java 7 has introduced me to object-oriented programming;
+ * VHDL
+ * Java 8 and C# has let me guess the marvel of functional programming, even if it's somewhat limited;
+ * By now I'm getting attracted to Clojure and its functional paradigm
+ * I've known actor-based paradigm a bit thanks to akka but it's somewhat limited so I'd prefer to discover this paradigm more in-depth with quasar and pulsar.
+ * Clojure and quasar will help me know more and transactional software memory and concurrent programming
+ * Then I'll dive into logic programming.
+ * Thanks with Clojure, I plan to get interested in matrix programming
+
+At the end of that whole path, I will say myself an engineer: by know I'm just a late student or a brogrammer.
+
+constraint programming → trammel
+relational programming, constraint logic programming, and nominal logic programming → core.logic
+logic for robots → mini-kanren
+
+Show your Clojure efficiency: implement it in Clojure https://github.com/evolvingstuff/RecurrentJava

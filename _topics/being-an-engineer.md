@@ -5,16 +5,6 @@ changefreq: daily
 collection: topics
 ---
 
-js graph http://maurizzzio.github.io/greuler/
-so we could make something like this as an architecture:
- * Lexer (from a raw row to sinograms IDS representation through a scanner)
-  * Scanner (fits each and every input type and use lazy sequences. It's at the very frontground)
- * Parser ()
- * Core ()
- * Export (to js graph, gephi, txt, image… can rely on gephi-toolkit. Would be from/to all these formats is create a substrate, put the graph then export it)
-
-I could use this: https://github.com/kawabata/ids-edit and the organisation to see how it looks into the set.
-
 ## Being an engineer
 
 As I'm using java for my daily life, I want to keep being a student and 

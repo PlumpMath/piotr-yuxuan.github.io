@@ -237,3 +237,46 @@ This part comes when theoretic frame has been weel-defined. Some ideas directly 
 * Moreover character are compound most of the time. What's the relation between the number *n* of existing characters we can make from *x* characters?
 * Several tools can compose new ideograms from existing components. I don't feel enough a valuable typesetter to be useful in any way in that field. Methinks the more than 80,000 ideograms included in unicode make that issue less critical.
 
+
+
+-----
+
+## New implementation design
+
+Couldn't gephi-toolkit be used in conjunction with js graph? [http://maurizzzio.github.io/greuler/](http://maurizzzio.github.io/greuler/)
+Actually gephi-oolkit can be used for the algorithms it's shipped with while greuler would be a nice front-end. Unfortunately Jenkins can't run the JVM… but Clojure can be compiled to JavaScript :-) what a strong language ~~
+
+So we could make something like this as an namespace-based architecture:
+
+ * Lexer (from a raw row to sinograms IDS representation through a scanner)
+  * Scanner (fits each and every input type and use lazy sequences. It's at the very frontground)
+ * Parser ()
+ * Database (Link with the graph-oriented database)
+ * Core (Contains the data itself)
+ * Export (to js graph, gephi, txt, image… can rely on gephi-toolkit. Would be from/to all these formats is create a substrate, put the graph then export it)
+
+I could use this: [https://github.com/kawabata/ids-edit](https://github.com/kawabata/ids-edit) and the organisation to see how it looks into the set.
+
+Resulting structure
+
+{% highlight HTML %}
+.
+├── COPYING
+├── LICENSE
+├── project.clj
+└── src
+    └── 華文
+        ├── core.clj
+        ├── export
+        │   └── export.clj
+        └── lexer
+            ├── lexer.clj
+            ├── parser
+            │   └── strategies
+            │       ├── chise
+            │       │   └── strategy.clj
+            │       └── kawabata
+            │           └── strategy.clj
+            ├── parser.clj
+            └── scanner.clj
+{% endhighlight %}

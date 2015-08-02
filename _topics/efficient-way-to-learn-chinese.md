@@ -57,7 +57,7 @@ There is no one-to-one link with variants, even not one-to-many. So variation pa
 
 We could early guess at this point that it may be interesting to learn etymons before compound sinograms to make the latter both easier to understand and remember. This process can be compared with Spanish. You can learn it only and no other languages else but it's so much easier to learn it when you already know Latin! Moreover, you need to know Latin to understand deeply that language. Anyway, would you learn both Latin and Spanish before going to Spain in vacations? Sure not, because it implies a bigger workload. This is different from Chinese because the Chinese language is more than three-thousand-year old thus uses its own old words as etymons and doesn't need older previous languages – actually Chinese is the main first Asian written language. To put it in a nutshell, learning order counts for Chinese far more than for Western languages.
 
-## Sinogram Set Structure
+## Sinogram set structure
 
 We can put sinograms together and use the composition relation to build several graph structures, comment them and explain how we move from one to another to get an higher abstraction. We discuss the structure of the sinogram set. We further define the sinogram frequency in two ways, geographically and graph-theoretically. We also sketch some ways to draw such graphs.
 
@@ -65,7 +65,7 @@ We can put sinograms together and use the composition relation to build several 
 
 We use the composition relation to build a composition network and we rise an open question about the structure of the sinogram set. We further distinguish between two definitions for sinogram frequency. Finally, the more frequent is a sinogram, the closer it is to the centre of the network.
 
-### Definition of the Composition Relation
+### Definition of the composition relation
 
 Let's define the set $$\mathbb{S}$$ of existing sinograms. This is a finite but still growing set. It's a subset of the infinite thus bigger universe set $$\mathbb{U}$$ of all possible sinograms.
 
@@ -88,7 +88,7 @@ The greatest element is a sinogram $$y$$ such as every sinogram $$x$$ is a compo
 
 We use this fresh relation to attach two sets to each sinogram $$s \in \mathbb{S}$$. The first set $$\mathbb{T}_s$$ contains all sinograms $$t \in \mathbb{S}$$ such like $$t \mathcal{R} s$$ while the second set $$\mathbb{F}_s$$ contains all sinograms $$t \in \mathbb{S}$$ such like $$s \mathcal{R} t$$. Because $$\mathcal{R}$$ is antisymmetric, the intersection of two sets of a given sinogram contains only the sinogram itself. A sinogram $$s \in \mathbb{S}$$ has no other components than itself if and only if $$\mathbb{T}_s = \mathbb{F}_s = \left\{ s \right\}$$. $$\mathbb{T}_v$$ is called the component set of $$v$$ and $$\mathbb{F}_v$$ its etymon set.
 
-### Constructing Graphs to Reach a Structure
+### Constructing graphs to reach a structure
 
 This part is aiming at acting like a natural bridge from what has been told afore to smotthly lead to a sinogram structure. We define several graph structures, comment them and explain why we move to another. Incidentally, we become a little bit more abstract. On the very beginning we define a basic edgeless graph with one vertex for each existing sinogram. Then, we describe several ways to add arcs to link vertices and finally choose one. We further perform an operation to merge some vertices together. On that new graph, vertices stand no more for a sinogram but rather more for an etymological class of sinograms.
 
@@ -143,7 +143,7 @@ A vertex $$\mathbb{S} \ni a \leftrightarrow v \in V_H$$ from the resulting graph
 
 Be careful: directed tree are usually defined such like the root can reach leaves. Sinogram trees are reversed. I choose to keep going with reversed trees because it makes the composition relation easier to be defined. Moreover, The formal definition of a forest is a multitree with no intertwinned trees. Then it's formally wrong to call such a multitree a forest but it's funnier to perform sylvan path finding ☺
 
-### Structure of Some Sets
+### Structure of some sets
 
 By construction, the sets $$\mathbb{F}_\mathbb{S}$$ and $$\mathbb{T}_\mathbb{S}$$ are subsets of the set of all subsets of $$\mathbb{S}$$. This latter set is called the [power set](https://en.wikipedia.org/wiki/Power_set) and noted $$2^\mathbb{S}$$. We know that $$\left( 2^\mathbb{S}, \cup, \cap, \complement \right)$$ [is a finite Boole algebra](https://en.wikipedia.org/wiki/Algebra_of_sets) then we can build an isomorphism to other Boole algebras. What can we say about $$\mathbb{F}_\mathbb{S}$$ and $$\mathbb{T}_\mathbb{S}$$? This is a thrilling question which can be extended to $$\mathbb{U}$$, knowing non-finite Boole algebra are not isomorphic. If $$\mathbb{F}_\mathbb{S}$$ and $$\mathbb{T}_\mathbb{S}$$ would be some kind of algebra, it would be nice to name it Chinese algebra!
 
@@ -167,7 +167,7 @@ $$ \mathbb{F}_a \cap \mathbb{F}_b \subset \mathbb{F}_a \cup \mathbb{F}_b $$
 $$ \mathbb{F}_a \setminus \mathbb{F}_b \subset \mathbb{F}_a \Delta \mathbb{F}_b \subset \mathbb{F}_a \cup \mathbb{F}_b $$
 
 
-### Sinogram Frequence
+### Sinogram frequence
 
 Well… finally what's the most efficient way to learn Chinese? Have we stepped forward or is all this theoretic discussion useless? Let's have a look on such a forest. Arcs are from the top to the bottom, thus arc $$af$$ is $$a \rightarrow f$$.
 
@@ -207,13 +207,13 @@ We may also intuit the higher is a sinogram frequency, the closer its vertex is 
 
 Actually, let's don't get stuck into technical consideration. Back to real life, frequency doesn't mean hierarchical closeness but merely: how often do I use that word in my speech? Existing datasources provide such statistics. To put it in a nutshell, learning sinograms by frequency means a trade-off between those centrality and speech frequency definitions is mandatory. One a hand, some sinograms are used only as components and never alone; even is they're quite close to the centre, we don't need to learn them because we would never use them. One the other hand, some words are used very often (like figures and numerals) but may be far from the centre.
 
-### Drawing the Forest
+### Drawing the forest
 
 Displaying the messy forest made with thousands of sinograms demands to be performed automatically. Designing an algorithm which can fit is both a very difficult and complex part. Maximal vertices may be clustered to show the forest structure so it may involve [geographical](https://en.wikipedia.org/wiki/R-tree) algorithm. We could also try to layout it with [Force-directed](https://en.wikipedia.org/wiki/Force-directed_graph_drawing) algorithms. The essential points of a such a drawing are to know what we want to be shown and to understand we can't use it to discover better the forest structure: this is up to our imagination.
 
 __The following is still a draft__
 
-## Bibliographic Recension
+## Bibliographic recension
 
 This project has been initiated with a bibliographic recension in order to draw a state of the art. Interesting article detail some field but leave some other still to be explorer.
 
@@ -248,16 +248,17 @@ Actually gephi-oolkit can be used for the algorithms it's shipped with while gre
 
 So we could make something like this as an namespace-based architecture:
 
- * Lexer (from a raw row to sinograms IDS representation through a scanner)
+ * Input tool
   * Scanner (fits each and every input type and use lazy sequences. It's at the very frontground)
- * Parser ()
- * Database (Link with the graph-oriented database)
- * Core (Contains the data itself)
- * Export (to js graph, gephi, txt, image… can rely on gephi-toolkit. Would be from/to all these formats is create a substrate, put the graph then export it)
+  * Lexer (from a raw row to sinograms IDS representation through a scanner)
+  * Parser ()
+ * Core (Contains the data itself, manipulate it, normalize it and make link with the graph-oriented database)
+ * Export the whole database or excerpt of it in reduced or expended form (to js graph, gephi, txt, xml, image… can rely on gephi-toolkit)
+  * One tool per export goal.
 
 I could use this: [https://github.com/kawabata/ids-edit](https://github.com/kawabata/ids-edit) and the organisation to see how it looks into the set.
 
-Resulting structure
+### Resulting structure
 
 {% highlight HTML %}
 .
@@ -280,3 +281,32 @@ Resulting structure
             ├── parser.clj
             └── scanner.clj
 {% endhighlight %}
+
+### Enlightened thoughts
+
+Stored data will be of the reduced form:
+ * Either the key is a radical, so the extent value length is 1;
+ * Either it's n-fold then the extend value length is n and we know IDC can not be more than threefold thus 1 ≤ n ≤ 3.
+
+What about the key? Chinese character set doesn't span over the whole IDS universe.
+
+I've found a context-free-grammar-based parser builder on GitHub (github.com/Engelberg/instaparse) then now my main goal is to define a gramar for Chinese language ;-)
+
+I want labelled syntax tree isn't it? just like resultant tree but with labels where it's possible.
+
+### Readings
+
+To build up this new implementation, I read these books: « Clojure for the brave and true », « Introduction to Automata Theory », « Languages, and Computations », « Living Clojure »
+
+### About regular expressions
+
+These following regular expressions can be very helpful for building a formal grammar:
+
+{% highlight Clojure %}
+(re-seq #"\p{InIdeographic_Description_Characters}" "aA1¬→⿱七")
+; => ("⿱")
+(re-seq #"\p{L}" "aA1¬→⿱.𫝕𬹁𫥇")
+; => ("a" "A" "𫝕")
+{% endhighlight %}
+
+As can be seen, \p{L} doesn't fully support ideographs. But it may suffice to enter full range of unicode blocks to solve this problem.

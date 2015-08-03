@@ -310,3 +310,22 @@ These following regular expressions can be very helpful for building a formal gr
 {% endhighlight %}
 
 As can be seen, \p{L} doesn't fully support ideographs. But it may suffice to enter full range of unicode blocks to solve this problem.
+
+### Parser levels
+
+The role of a parser is to take raw data and to output some intelligible by a software. It thus have several levels:
+ * Level 0 accesses physical data, that's to say the filesystem. This level only takes a location as single parameter. It gives a way to access each data row.
+ * Level 1 presents raw data. It take as single parameter a description of the source format. This description is used to populate the output map. It splits a row into a map which will be later parsed. This map may have keywords like :ids, :codepoint, :letter. Here, :letter means letter of the alphabet. The description taken as parameter can thereby map each keyword to a column index. If there are several <small>IDS</small> variants, :ids will be mapped to a vector. If there is just one string then :ids will map to it.
+ * Level 2 parses the <small>IDS</small>. Thus is uses the official <small>IDS</small> grammar.
+ * Level 3 no longer belongs to the parser only but can be included into the lexer: we know have manipulable data so we want to manipulate them to construct a graph. From this level and above, we should deal with versions and prepare the data structure for queries.
+
+Then, as the graph has now been constructed, we can query it. This is something else but it would still need a grammar to form a domain-specific language. It sure will be very interesting to design such a grammar. It reminds me somethnig like XML queries. Maybe I could get inspired by grep as in an article I read.
+
+### Grammar types
+
+At least three kinds of context-free grammars will be used in this project:
+ * The first one (the most simple) is for level 1 to parse strings which contain variants to formal <small>IDS</small>. 
+ * The second one (the most show-off: «hey buddy, I've defined a grammar for Chinese!») is used in level 2 to parse <small>IDS</small>.
+ * The last one (the most interesting) will appear in the query engine to define its language.
+
+Reading « Introduction to Automata Theory, Languages, and Computations » from Hoppcroft, Motwani and Ullman may seem just academic duty but I surely will benefit from all this theory so I must keep on! ~

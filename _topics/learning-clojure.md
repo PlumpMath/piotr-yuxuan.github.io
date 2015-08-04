@@ -2,6 +2,7 @@
 title: "Learning Clo<i>j</i>ure"
 layout: page
 collection: topics
+index: true
 changefreq: daily
 abstract_html: "<p>The print of my path from vain thoughts through darkness to Clo<i>j</i>ure.</p>"
 ---

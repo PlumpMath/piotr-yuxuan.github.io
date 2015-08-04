@@ -2,6 +2,7 @@
 title: Being an engineer
 layout: page
 changefreq: daily
+index: true
 collection: topics
 ---
 

@@ -1,12 +1,9 @@
 ---
 title: Actor chained bug simulation 
-layout: page
+layout: topic
 index: true
-collection: topics
 changefreq: daily
 abstract_html:
 ---
-
-## Actor chained bug simulation
 
 bla bla bla

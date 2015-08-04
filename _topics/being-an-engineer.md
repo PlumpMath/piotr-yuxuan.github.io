@@ -1,9 +1,8 @@
 ---
 title: Being an engineer
-layout: page
+layout: topic
 changefreq: daily
 index: true
-collection: topics
 ---
 
 ## Being an engineer

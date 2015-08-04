@@ -1,7 +1,6 @@
 ---
 title: Music
-layout: page
-collection: topics
+layout: topic
 index: true
 changefreq: daily
 ---

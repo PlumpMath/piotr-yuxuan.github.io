@@ -25,7 +25,7 @@ We begin with an introduction to [sinogram structure]({{ "../sinogram-structure/
 
 Once the sinogram structure is described, we discuss the structure of the [sinogram set]({{ "../sinogram-set-structure" }}). How can you compose them? We can put sinograms together and use the composition relation to build several graph structures. We comment them and explain how we move from one to another to get an higher abstraction. We further define the sinogram frequency in two ways, geographically and graph-theoretically. We also sketch some ways to draw such graphs.
 
-Previous parts define the environment of this project of theoretical surrounding. While I cas reading these, some questions or ideas came to my mind: « what if we could…? » and some of these possible [features]({{ "../features" }}) have kept. Some ideas directly come from the recension and may be interested to implement because of technical points or to get a deeper comprehension of what we're talking about. Some others may have been not explored yet.
+Previous parts define the environment of this project of theoretical surrounding. While I cas reading these, some questions or ideas came to my mind: « what if we could…? » and some of these possible [features]({{ "../features" }}) have kept. Some ideas directly come from the recension and may be interesting to implement because of technical points or to get a deeper comprehension of what we're talking about. Some others may have been not explored yet.
 
 However, it also comes with tangible [implementations]({{ "../implementations/" }}). The latters not only address programming problems but also grammar definitions.
 

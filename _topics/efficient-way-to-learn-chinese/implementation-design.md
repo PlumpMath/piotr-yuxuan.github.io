@@ -75,7 +75,7 @@ As can be seen, \p{L} doesn't fully support ideographs. But it may suffice to en
 
 ### Parser levels
 
-The role of a parser is to take raw data and to output some intelligible by a software. It thus have several levels:
+The role of a parser is to take raw data and to output something intelligible by a software. It thus have several levels:
 
  * Level 0 accesses physical data, that's to say the filesystem. This level only takes a location as single parameter. It gives a way to access each data row.
  * Level 1 presents raw data. It take as single parameter a description of the source format. This description is used to populate the output map. It splits a row into a map which will be later parsed. This map may have keywords like :ids, :codepoint, :letter. Here, :letter means letter of the alphabet. The description taken as parameter can thereby map each keyword to a column index. If there are several <small>IDS</small> variants, :ids will be mapped to a vector. If there is just one string then :ids will map to it.
@@ -94,3 +94,15 @@ At least three kinds of context-free grammars will be used in this project:
  * Finally, we can add another grammar, at an higher level than previous ones. Such high-order grammar will be real Chinese grammar, for example used <small>NLP</small>.
 
 Reading « Introduction to Automata Theory, Languages, and Computations » from H<small>OPPCROFT</small>, M<small>OTWANI</small> and U<small>LLMAN</small> may seem just academic duty but I surely will benefit from all this theory so I must keep on! ~
+
+### Overcoming Java flaws
+
+The JVM comes with a big flaw: character are encoded in 16 bits. This means only the BMP can be directly addressed and semalessly used. To overcome this painful limitation, we provide several functions to escape Chinese characters. It's pretty straightforward but one have to keep in mind we must be able to use explicit characters like 𠆢 (which doesn't belong to the BMP), escaped explicit characters (𠆢 becomes &U+201A2;) and escaped CDP characters (like &CDP-8C42;). Basically, it will change the way letters are defined in the grammar definitions and all functions will natively assume they have to deal with espaced characters. Functions with side-effect will allow us to get back to the « real Chinese » world and the few remaining limitation will be the font to display glyphs.
+
+### Code architecture
+
+Namespaces.
+
+## About purity
+
+I believe I should try to keep namespace perfectly pure, I mean functions impurity may only come from within the same namespace. Perhaps I'm wrong but I feel this is a good tradeoff as this allows to use vars just like immutable writing shortcuts.

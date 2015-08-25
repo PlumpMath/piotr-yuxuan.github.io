@@ -73,5 +73,5 @@ I'd like to change `clojure-pack` a bit so it could display $$∧$$ (and), $$∨
 Some exercices lay in a [dedicated repository](https://www.github.com/{{ site.links.github | append: "/clojure-for-a-newbie" }}).
 
 ---
-[^1]: This is bad joke: I acknowledge German people must be distinguished from Nazi ideology.
+[^1]: This is bad joke: I acknowledge cultivated German people must be distinguished from Nazi ideology.
 

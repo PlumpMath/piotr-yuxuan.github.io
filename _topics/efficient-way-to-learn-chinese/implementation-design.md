@@ -19,30 +19,6 @@ So we could make something like this as an namespace-based architecture:
 
 I could use this: [https://github.com/kawabata/ids-edit](https://github.com/kawabata/ids-edit) and the organisation to see how it looks into the set.
 
-### Resulting structure
-
-{% highlight HTML %}
-.
-├── COPYING
-├── LICENSE
-├── project.clj
-└── src
-    └── 華文
-        ├── core.clj
-        ├── export
-        │   └── export.clj
-        └── lexer
-            ├── lexer.clj
-            ├── parser
-            │   └── strategies
-            │       ├── chise
-            │       │   └── strategy.clj
-            │       └── kawabata
-            │           └── strategy.clj
-            ├── parser.clj
-            └── scanner.clj
-{% endhighlight %}
-
 ### Enlightened thoughts
 
 Stored data will be of the reduced form:
@@ -52,14 +28,13 @@ Stored data will be of the reduced form:
 
 What about the key? Chinese character set doesn't span over the whole IDS universe.
 
-I've found a context-free-grammar-based parser builder on GitHub (github.com/Engelberg/instaparse) then now my main goal is to define a gramar for Chinese language ;-)
-
-I want labelled syntax tree isn't it? just like resultant tree but with labels where it's possible.
+I use this context-free-grammar-based [parser builder](github.com/Engelberg/instaparse) to define grammar in a theoretic way.
 
 ### Readings
 
 To build up this new implementation, I read these books: « Clojure for the brave and true », « Introduction to Automata Theory », « Languages, and Computations », « Living Clojure »
 
+Reading « Introduction to Automata Theory, Languages, and Computations » from H<small>OPPCROFT</small>, M<small>OTWANI</small> and U<small>LLMAN</small> may seem just academic duty but I surely will benefit from all this theory so I must keep on! ~
 ### About regular expressions
 
 These following regular expressions can be very helpful for building a formal grammar:
@@ -71,15 +46,26 @@ These following regular expressions can be very helpful for building a formal gr
 ; => ("a" "A" "𫝕")
 {% endhighlight %}
 
-As can be seen, \p{L} doesn't fully support ideographs. But it may suffice to enter full range of unicode blocks to solve this problem.
+As can be seen, `\p{L}` doesn't fully support ideographs. But it may suffice to enter full range of unicode blocks to solve this problem. However, reguler expression only dealswith text so a ranges have to be dealt with accordingly (see char-pattern namespace).
+
+{% highlight Clojure %}
+(def negative-grammar
+  (insta/parser
+   (let [kernel "&(U\\+|CDP\\-)[0-9a-zA-Z]+;"]
+     (str "<S> = (Letter | Else)*"
+          "Letter = " (print-str (re-pattern (str "^(?!" kernel "$).")))
+          "Else = " (print-str (re-pattern (str #"" kernel "")))))))
+{% endhighlight %}
+
+This is an suggestion to retrieve strings that match _not_ a pattern.
 
 ### Parser levels
 
-The role of a parser is to take raw data and to output something intelligible by a software. It thus have several levels:
+The role of a parser is to take raw data and to output something intelligible by a software. It thus have several levels. For each level we should check the file processing to catch and remove errors.
 
  * Level 0 accesses physical data, that's to say the filesystem. This level only takes a location as single parameter. It gives a way to access each data row.
  * Level 1 presents raw data. It take as single parameter a description of the source format. This description is used to populate the output map. It splits a row into a map which will be later parsed. This map may have keywords like :ids, :codepoint, :letter. Here, :letter means letter of the alphabet. The description taken as parameter can thereby map each keyword to a column index. If there are several <small>IDS</small> variants, :ids will be mapped to a vector. If there is just one string then :ids will map to it.
- * Level 2 parses the <small>IDS</small>. Thus is uses the official <small>IDS</small> grammar.
+ * Level 2 parses the <small>IDS</small>. Thus is uses the officially specified <small>IDS</small> grammar.
  * Level 3 no longer belongs to the parser only but can be included into the lexer: we know have manipulable data so we want to manipulate them to construct a graph. From this level and above, we should deal with versions and prepare the data structure for queries.
 
 Then, as the graph has now been constructed, we can query it. This is something else but it would still need a grammar to form a domain-specific language. It sure will be very interesting to design such a grammar. It reminds me somethnig like <small>XML</small> queries. Maybe I could get inspired by grep as in an article I read.
@@ -93,15 +79,9 @@ At least three kinds of context-free grammars will be used in this project:
  * The last one (the most interesting) will appear in the query engine to define its language.
  * Finally, we can add another grammar, at an higher level than previous ones. Such high-order grammar will be real Chinese grammar, for example used <small>NLP</small>.
 
-Reading « Introduction to Automata Theory, Languages, and Computations » from H<small>OPPCROFT</small>, M<small>OTWANI</small> and U<small>LLMAN</small> may seem just academic duty but I surely will benefit from all this theory so I must keep on! ~
-
 ### Overcoming Java flaws
 
 The JVM comes with a big flaw: character are encoded in 16 bits. This means only the BMP can be directly addressed and semalessly used. To overcome this painful limitation, we provide several functions to escape Chinese characters. It's pretty straightforward but one have to keep in mind we must be able to use explicit characters like 𠆢 (which doesn't belong to the BMP), escaped explicit characters (𠆢 becomes &U+201A2;) and escaped CDP characters (like &CDP-8C42;). Basically, it will change the way letters are defined in the grammar definitions and all functions will natively assume they have to deal with espaced characters. Functions with side-effect will allow us to get back to the « real Chinese » world and the few remaining limitation will be the font to display glyphs.
-
-### Code architecture
-
-Namespaces.
 
 ## About purity
 

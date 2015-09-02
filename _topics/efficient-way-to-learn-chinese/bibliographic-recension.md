@@ -9,3 +9,5 @@ __The following is still a draft__
 State of the art
 
 I've found most of these articles on their respective authors' websites. However, if I wouldn't be allowed to publicly expose some of them, just send an email about that.
+
+The list of the articles can be found within the git repository.

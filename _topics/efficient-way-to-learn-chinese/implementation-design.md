@@ -236,7 +236,7 @@ following function set:
 -   `select-regeces` and `aggregate-regeces` may be moved to `regeces`
     to increase consistency.
 -   `print-rules` will be moved to `consts` as a private function.
--   `deref-codepoint` has no sense but should be something like `deref-codepoint`.
+-   `deref-codepoint` has no sense but should be something like `deref-escaped`.
 -   We add new function `codepoint` which take a parameter to say the direction: from codepoint or to codepoint?
 
 ### <small>IDS</small> and trees
@@ -385,7 +385,7 @@ Besides them, you also find several functions.
 
 ## Resulting architecture
 
-This paragraph presents current feature sharing amongst namespaces. Space names are in __bold__ font, functions in regular shape and immutable datas are in italics.
+This paragraph presents current feature sharing amongst namespaces. Space names are in __bold__ font, functions in regular shape and immutable datas are in *italic*.
 
 * __華文__
 	* __core__
@@ -394,22 +394,18 @@ This paragraph presents current feature sharing amongst namespaces. Space names 
 		* __char__
 			* token
 				* codepoint
-				* some missing :/
 		* __struct__
 			* deref
 			* escape
 			* process-to
 		* __regeces__
-			* dec-to-hex
-			* hex-to-dec
-			* pow
 			* to-pattern
 			* select
 			* aggregate
 	* __consts__
 		* *definitions*
 		* *unicode-blocks*
-		* *print-rules*
+		* print-rules
 		* *code-escape*
 		* *prefix-u*
 		* *prefix-cdp*
@@ -428,6 +424,10 @@ This paragraph presents current feature sharing amongst namespaces. Space names 
 			* level-2
 	* __lexer__
 		* harden
+	* __utils__
+		* dec-to-hex
+		* hex-to-dec
+		* pow		
 
 ## Polymorphism and other stuff I must know
 

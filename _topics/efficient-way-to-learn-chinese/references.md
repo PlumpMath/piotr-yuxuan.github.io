@@ -1,6 +1,7 @@
 ---
 layout: topic
 title:  "Solving Clojure cross-file references within the REPL (in Cider on Emacs)"
+abstract: "Cross-files references in Clojure"
 ---
 
 I've come to be lead by domain-driven design to change the architecture of an existing code to put altogether in the same namespace functions which lay in the same semantic field. However, now I'm stuck because of the kind of cross-file references examplified by the three following files `file[A-C]`.
